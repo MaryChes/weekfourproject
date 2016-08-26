@@ -29,6 +29,9 @@ table {
 form {
 	float: left;
 	width: 200px;
+	background-color: grey;
+	text-align: center;
+	align-self: center;
 }
 
 div{

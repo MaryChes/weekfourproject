@@ -6,7 +6,7 @@
 </head>
 
 <body>
-
+<div class = "clearfix">
 	<audio autoplay="autoplay" controls="control" loop="loop" hidden="true">
         <source src="C:\Users\admin\WeekFourProject\weekfourproject\src\main\webapp\Images\lobby.mp3" type="audio/mpeg"></source>
         C:\Users\admin\WeekFourProject\weekfourproject\Sound
@@ -110,7 +110,7 @@
 </table>
 
 
-<form>
+<form class = "title">
 	Movie Title:
 	<br>
 		<input type="text" name="movietitle">
@@ -128,7 +128,34 @@
 	<br>
 	<br>
 	<input type="submit" onclick="alert('Thanks You For Submitting To The Movie Database!')" value="Submit">
+	<br>
 </form>
 
+<form action="action_page.php">
+	Enter the Movie You Wish To Update:
+	<br>
+		<input type="text" name="movietitle">
+	<br>
+	Select the Field You Wish To Update
+	<select name="Fields">
+		<option value="Rating">Rating</option>
+		<option value="Genre">Genre</option>
+		<option value="Length">Length</option>
+	</select>
+	<br>
+	Enter the Update You Wish To Make:
+	<br>
+		<input type="text" name="update">
+	<br>
+	<br>
+	<input type="submit" onclick="alert('Thanks You For Updating The Movie Database!')" value="Update">
+	<br>
+</form>
+
+<form>
+	
+</form>
+
+</div>
 </body>
 </html>

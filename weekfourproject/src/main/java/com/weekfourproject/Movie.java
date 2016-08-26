@@ -6,7 +6,7 @@ public class Movie
 	private String movieTitle = null;
 	private String movieRating = null;
 	private String movieGenre = null;
-	private int movielength = 0;
+	private int movielength = 0;  
 	
 	public Movie() 
 	{
