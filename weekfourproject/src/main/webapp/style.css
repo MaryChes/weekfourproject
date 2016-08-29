@@ -19,21 +19,24 @@ html {
 
 table {
 	width: 75%;
-	background-color: white;
+	background-color: #D6D183;
 	table-layout: middle;
 	text-align: center;
 	margin-top: 75px;
 	margin-left: 200px;
+	border: 3px, #2D2600;
 }
 
 form {
 	float: left;
 	width: 200px;
-	background-color: grey;
+	background-color: #9C956C;
 	text-align: center;
 	align-self: center;
 }
-
+.title{
+	margin-left: 450px;
+}
 div{
 
 }

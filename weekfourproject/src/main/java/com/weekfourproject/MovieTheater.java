@@ -32,6 +32,7 @@ public class MovieTheater
 				break;
 			
 			case "3":
+				DAO.readFromDB();
 				DAO.deleteToDB();
 				DAO.readFromDB();
 				break;

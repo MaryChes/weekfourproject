@@ -1,161 +1,131 @@
 <!DOCTYPE html>
-<html>
-<link rel="stylesheet" type="text/css" href="style.css">
+<html lang="en">
+
 <head>
-	<title>Movie Database</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>One Page Wonder - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/one-page-wonder.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
-<div class = "clearfix">
-	<audio autoplay="autoplay" controls="control" loop="loop" hidden="true">
-        <source src="C:\Users\admin\WeekFourProject\weekfourproject\src\main\webapp\Images\lobby.mp3" type="audio/mpeg"></source>
-        C:\Users\admin\WeekFourProject\weekfourproject\Sound
-        Your browser does not support the audio element.
-    </audio>
 
-	<h1>Welcome To The Movie Database</h1>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-	<br>
-	<br>
-	<br>
+    <!-- Full Width Image Header -->
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h1>One Page Wonder</h1>
+                <h2>Will Knock Your Socks Off</h2>
+            </div>
+        </div>
+    </header>
 
-<table>
-	<tr>
-		<th>Movie ID</th>
-		<th>Title</th>
-		<th>Rating</th>
-		<th>Genre</th>
-		<th>Length (minutes)</th>
-	</tr>
+    <!-- Page Content -->
+    <div class="container">
 
-	<tr>
-		<td>1</td>
-		<td>Fight Club</td>
-		<td>R</td>
-		<td>Drama</td>
-		<td>139</td>
-	</tr>
+        <hr class="featurette-divider">
 
-	<tr>
-		<td>2</td>
-		<td>Scream</td>
-		<td>R</td>
-		<td>Horror</td>
-		<td>111</td>
-	</tr>
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <h2 class="featurette-heading">This First Heading
+                <span class="text-muted">Will Catch Your Eye</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
 
-	<tr>
-		<td>3</td>
-		<td>Cabin in the Woods</td>
-		<td>R</td>
-		<td>Horror</td>
-		<td>95</td>
-	</tr>
-	
-	<tr>
-		<td>4</td>
-		<td>Empire Records</td>
-		<td>PG13</td>
-		<td>Comedy</td>
-		<td>90</td>
-	</tr>
+        <hr class="featurette-divider">
 
-	<tr>
-		<td>5</td>
-		<td>Prestige</td>
-		<td>PG13</td>
-		<td>Mystery</td>
-		<td>130</td>
-	</tr>
+        <!-- Second Featurette -->
+        <div class="featurette" id="services">
+            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
+            <h2 class="featurette-heading">The Second Heading
+                <span class="text-muted">Is Pretty Cool Too.</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
 
-	<tr>
-		<td>6</td>
-		<td>Dazed and Confused</td>
-		<td>R</td>
-		<td>Comedy</td>
-		<td>102</td>
-	</tr>
+        <hr class="featurette-divider">
 
-	<tr>
-		<td>7</td>
-		<td>Inside Out</td>
-		<td>PG</td>
-		<td>Horror</td>
-		<td>95</td>
-	</tr>
+        <!-- Third Featurette -->
+        <div class="featurette" id="contact">
+            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <h2 class="featurette-heading">The Third Heading
+                <span class="text-muted">Will Seal the Deal.</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
 
-	<tr>
-		<td>8</td>
-		<td>Legends of the Fall</td>
-		<td>R</td>
-		<td>Drama</td>
-		<td>133</td>
-	</tr>
+        <hr class="featurette-divider">
 
-	<tr>
-		<td>9</td>
-		<td>American Pie</td>
-		<td>R</td>
-		<td>Comedy</td>
-		<td>95</td>
-	</tr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
 
-	<tr>
-		<td>10</td>
-		<td>It Follows</td>
-		<td>R</td>
-		<td>Horror</td>
-		<td>100</td>
-	</tr>
-</table>
+    </div>
+    <!-- /.container -->
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<form class = "title">
-	Movie Title:
-	<br>
-		<input type="text" name="movietitle">
-	<br>
-	Movie Rating:
-	<br>
-		<input type="text" name="rating">
-	<br>
-	Genre:<br>
-		<input type="text" name="genre">
-	<br>
-	Length(minutes):
-	<br>
-	<input type="text" name="length">
-	<br>
-	<br>
-	<input type="submit" onclick="alert('Thanks You For Submitting To The Movie Database!')" value="Submit">
-	<br>
-</form>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-<form action="action_page.php">
-	Enter the Movie You Wish To Update:
-	<br>
-		<input type="text" name="movietitle">
-	<br>
-	Select the Field You Wish To Update
-	<select name="Fields">
-		<option value="Rating">Rating</option>
-		<option value="Genre">Genre</option>
-		<option value="Length">Length</option>
-	</select>
-	<br>
-	Enter the Update You Wish To Make:
-	<br>
-		<input type="text" name="update">
-	<br>
-	<br>
-	<input type="submit" onclick="alert('Thanks You For Updating The Movie Database!')" value="Update">
-	<br>
-</form>
-
-<form>
-	
-</form>
-
-</div>
 </body>
+
 </html>
