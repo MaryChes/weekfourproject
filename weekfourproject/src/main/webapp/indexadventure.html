@@ -191,30 +191,27 @@
 
         <hr class="featurette-divider">
 
-        <!-- Third Featurette -->
+       <!-- Third Featurette -->
         <div class="featurette" id="contact">
-            <h2 class="featurette-heading">Add a Movie
-                <br>
-                <span class="text-muted">The developers stopped caring about three years ago.</span>
-            </h2>
-                <form>
+            <h2 class="featurette-heading">Add a Movie</h2>
+                <form action= "addToDB" method="post" onsubmit="setTimeout(function () { window.location.reload(); }, 10)">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Movie Title</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Movie">
+                        <label>Movie Title</label>
+                        <input type="text" class="form-control" name="title" placeholder="Movie">
                      </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">MPAA Rating</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Rating">
+                        <label>MPAA Rating</label>
+                        <input type="text" class="form-control" name="rating" placeholder="Rating">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Movie Genre</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Genre">
+                        <label>Movie Genre</label>
+                        <input type="text" class="form-control" name="genre" placeholder="Genre">
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Running Time (min)</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Running Time">
+                        <label>Running Time (min)</label>
+                        <input type="text" class="form-control" name="length" placeholder="Running Time">
                     </div>
-                    <button type="submit" class="btn btn-default">Add Movie</button>
+                    <input type="submit" value="Submit">
                 </form>
         </div>
 
@@ -229,19 +226,19 @@
             <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Movie Title</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Movie">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Movie">
                      </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Updated MPAA Rating</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Updated Rating">
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Updated Rating">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Updated Movie Genre</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Updated Genre">
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Updated Genre">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Updated Running Time (min)</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Updated Running Time">
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Updated Running Time">
                     </div>
                     <button type="submit" class="btn btn-default">Update Movie</button>
                 </form>
@@ -258,7 +255,7 @@
             <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Movie Title</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Movie Title">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Movie Title">
                      </div>
                     <button type="submit" class="btn btn-default">Delete Movie</button>
                 </form>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Ultimate Movie Database</title>   
+</head>
+
+<body>
+</body>
+
+<form method="post">
+<table border="2">
+<tr>
+<td>Movie ID</td>
+<td>Title</td>
+<td>Rating</td>
+<td>Genre</td>
+<td>Length</td>
+</tr>
+<%
+try
+{
+Class.forName("com.mysql.jdbc.Driver");
+String url="jdbc:mysql://localhost/test";
+String username="root";
+String password="root";
+String query="select * from movie.movie";
+
+Connection conn=DriverManager.getConnection(url,username,password);
+Statement stmt=conn.createStatement();
+ResultSet rs=stmt.executeQuery(query);
+while(rs.next())
+{
+
+%>
+    <tr><td><%=rs.getInt("movie_id"); %></td></tr>
+    <tr><td><%=rs.getString("title"); %></td></tr>
+    <tr><td><%=rs.getString("rating"); %></td></tr>
+    <tr><td><%=rs.getString("length"); %></td></tr>
+        <%
+
+}
+%>
+    </table>
+    <%
+    rs.close();
+    stmt.close();
+    conn.close();
+    }
+catch(Exception e)
+{
+    e.printStackTrace();
+    }
+
+
+
+
+%>
+
+</form>
+</html> 
+mysql jsp
